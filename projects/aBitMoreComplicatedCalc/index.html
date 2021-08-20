@@ -3,80 +3,84 @@
 
 <head>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
     <title>Calculator</title>
 </head>
 
 <body>
     <main>
         <form>
-            <fieldset>
-                <legend>Simple Calculator</legend>
-                <table>
-                    <tr>
-                        <td colspan="3">
-                            <input type="text" name="inputfield" value='' disabled>
-                        </td>
-                        <td>
-                            <input type="button" name="clear_btn" value="C" onclick="clearInput()" </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="button" name="b1" value='1' onclick="updateValue('1')">
-                        </td>
-                        <td>
-                            <input type="button" name="b2" value='2' onclick="updateValue('2')">
-                        </td>
-                        <td>
-                            <input type="button" name="b3" value='3' onclick="updateValue('3')">
-                        </td>
-                        <td>
-                            <input type="button" name="plus" value='+' onclick="updateValue('+')">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="button" name="b4" value='4' onclick="updateValue('4')">
-                        </td>
-                        <td>
-                            <input type="button" name="b5" value='5' onclick="updateValue('5')">
-                        </td>
-                        <td>
-                            <input type="button" name="b6" value='6' onclick="updateValue('6')">
-                        </td>
-                        <td>
-                            <input type="button" name="minus" value='-' onclick="updateValue('-')">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="button" name="b7" value='7' onclick="updateValue('7')">
-                        </td>
-                        <td>
-                            <input type="button" name="b8" value='8' onclick="updateValue('8')">
-                        </td>
-                        <td>
-                            <input type="button" name="b9" value='9' onclick="updateValue('9')">
-                        </td>
-                        <td>
-                            <input type="button" name="times" value='*' onclick="updateValue('*')">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="button" name="dot" value='.' onclick="updateValue('.')">
-                        </td>
-                        <td>
-                            <input type="button" name="b0" value='0' onclick="updateValue('0')">
-                        </td>
-                        <td>
-                            <input type="button" name="enter" value='=' onClick=calculate()>
-                        </td>
-                        <td>
-                            <input type="button" name="div" value='/' onclick="updateValue('/')">
-                        </td>
-                    </tr>
-                </table>
-            </fieldset>
+
+            <table>
+                <tr>
+                    <td colspan="3">
+                        <input type="text" name="inputfield" class="input" value='' disabled>
+                    </td>
+                    <td>
+                        <input type="button" class="button small" name="clear_btn" value="C" onclick="clearInput()"
+                            </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" class="button" name="b1" value='1' onclick="updateValue('1')">
+                    </td>
+                    <td>
+                        <input type="button" class="button" name="b2" value='2' onclick="updateValue('2')">
+                    </td>
+                    <td>
+                        <input type="button" class="button" name="b3" value='3' onclick="updateValue('3')">
+                    </td>
+                    <td>
+                        <input type="button" class="button small" name="plus" value='+' onclick="updateValue('+')">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" class="button" name="b4" value='4' onclick="updateValue('4')">
+                    </td>
+                    <td>
+                        <input type="button" class="button" name="b5" value='5' onclick="updateValue('5')">
+                    </td>
+                    <td>
+                        <input type="button" class="button" name="b6" value='6' onclick="updateValue('6')">
+                    </td>
+                    <td>
+                        <input type="button" class="button small" name="minus" value='-' onclick="updateValue('-')">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" class="button" name="b7" value='7' onclick="updateValue('7')">
+                    </td>
+                    <td>
+                        <input type="button" class="button" name="b8" value='8' onclick="updateValue('8')">
+                    </td>
+                    <td>
+                        <input type="button" class="button" name="b9" value='9' onclick="updateValue('9')">
+                    </td>
+                    <td>
+                        <input type="button" class="button small" name="times" value='*' onclick="updateValue('*')">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" class="button" name="dot" value='.' onclick="updateValue('.')">
+                    </td>
+                    <td>
+                        <input type="button" class="button" name="b0" value='0' onclick="updateValue('0')">
+                    </td>
+                    <td>
+                        <input type="button" class="button" name="enter" value='=' onClick=calculate()>
+                    </td>
+                    <td>
+                        <input type="button" class="button small" name="div" value='/' onclick="updateValue('/')">
+                    </td>
+                </tr>
+            </table>
+
         </form>
     </main>
 </body>
